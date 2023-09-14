@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;500;700&family=Nunito:wght@200;300;500;600;700;900;1000&family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway';
+    color: white;
+    font-size: 20px;
+}
+
+.main {
+    background-image: url("../img/coder2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.glas {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.bs {
+    -webkit-box-shadow: 4px 6px 18px 0px rgba(255,255,255,0.54);
+    -moz-box-shadow: 4px 6px 18px 0px rgba(255,255,255,0.54);
+    box-shadow: 4px 6px 18px 0px rgba(255,255,255,0.54);
+}
+
+.welcome {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.carousel-item p, .start-unten p {
+    font-weight: bold;
+}
+
+.carousel {
+    width: 70%;
+}
+
+.onloadTop {
+    transform: translateY(-1000px);
+    opacity: 0;
+    transition: 1.2s all ease;
+}
+
+.onloadTop.active {
+transform: translateY(0);
+opacity: 1;
+}
+
+.onloadUnten {
+transform: translateY(250px);
+opacity: 0;
+transition: 2s all ease;
+}
+
+.onloadUnten.active {
+transform: translateY(0);
+opacity: 1;
+}
+
+.onloadAppear {
+transform: scale(0);
+opacity: 0;
+transition: 1.2s all ease;
+}
+
+.onloadAppear.active {
+transform: scale(1);
+opacity: 1;
+}

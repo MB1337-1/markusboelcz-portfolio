@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;500;700&family=Nunito:wght@200;300;500;600;700;900;1000&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway';
+    color: white;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+.bs {
+    -webkit-box-shadow: 4px 6px 18px 0px rgba(255,255,255,0.54);
+    -moz-box-shadow: 4px 6px 18px 0px rgba(255,255,255,0.54);
+    box-shadow: 4px 6px 18px 0px rgba(255,255,255,0.54);
+}
+
+a:hover {
+    color: #0dcaf0 !important;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.62) !important;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.bg1 {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bg2 {
+    background-color: rgba(12, 41, 65, 0.567);
+}
+
+.nav-link {
+    color: white;
+}
+
+#home, #ausbildung, #projekte, #contact {
+    scroll-margin-top: 56px;
+}
+
+.divider1 {
+    background-image: url("../img/coder11.jpg");
+    
+}
+
+.divider2 {
+    background-image: url("../img/coder6.avif");
+}
+
+.divider3 {
+    background-image: url("../img/coder4.jpg");
+}
+
+.divider4 {
+    background-image: url("../img/coder8.jpeg");
+    height: 250px !important;
+}
+
+
+.bg-div {
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
+
+.bild-home {
+    width: 100%;
+}
+
+.bild-home img {
+    width: 300px;
+    opacity: 0.8;
+}
+
+.bg-divider {
+    background-color: rgba(12, 41, 65, 0.567);
+    padding: 50px 10px;
+}
+
+.bg-divider2 {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px 10px;
+}
+
+.card-body {
+    background-color: rgba(12, 41, 65, 0.567);
+}
+
+.card-footer {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+input, textarea, label::after {
+    background-color: rgba(138, 157, 174, 0.809) !important;
+    color: white !important;
+    outline-color: #5bc0de !important;
+    border-radius: 5px !important;
+}
+
+label {
+    color: white !important;
+}
+
+
+.accordion-button.collapsed {
+    text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+    text-align: center;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-chevron-up' viewBox='0 0 16 16'%3E%3Cpath d='M2.293 11.293a1 1 0 0 1 1.414 0L8 14.586l4.293-4.293a1 1 0 1 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E");
+}
+
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath d='M2.293 5.293a1 1 0 0 1 1.414 0L8 9.586l4.293-4.293a1 1 0 1 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E");
+}
+
+#collapse1.show .accordion-body, #collapse2.show .accordion-body, #collapse3.show .accordion-body {
+    text-align: left !important;
+}
+
+.card {
+    transition: transform .2s;
+}
+
+.card:hover {
+    -ms-transform: scale(1.04); /* IE 9 */
+    -webkit-transform: scale(1.04); /* Safari 3-8 */
+    transform: scale(1.04); 
+}
+
+.bx {
+    transition: transform .2s;
+}
+
+.bx:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
+.revealUnten {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.2s all ease;
+}
+
+.revealUnten.active {
+transform: translateY(0);
+opacity: 1;
+}
+
+.appear {
+transform: scale(0);
+opacity: 0;
+transition: 1.2s all ease;
+}
+
+.appear.active {
+transform: scale(1);
+opacity: 1;
+}
+
+.onloadTop {
+transform: translateY(-200px);
+opacity: 0;
+transition: 1.2s all ease;
+}
+
+.onloadTop.active {
+transform: translateY(0);
+opacity: 1;
+}
+
+
+.onloadAppear {
+transform: scale(0);
+opacity: 0;
+transition: 1.2s all ease;
+}
+
+.onloadAppear.active {
+transform: scale(1);
+opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+
+    .onloadAppear {
+        transform: scale(1);
+        opacity: 1;
+        }
+
+    .onloadAppear.active {
+        transform: scale(1);
+        opacity: 1;
+        }
+}
+
