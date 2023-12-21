@@ -3,7 +3,7 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Markus Blcz</title>
+      <title>Markus Bölcz</title>
       <link rel="stylesheet" href="css/bs.css">
       <link rel="stylesheet" href="css/style-main.css">
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -342,7 +342,7 @@
                 </a>
               </div>
               <div class="appear">
-                <a class="text-info" href="https://api.whatsapp.com/send?phone=1436769110337">
+                <a class="text-info" href="https://api.whatsapp.com/send?phone=436769110337">
                   <i class='bx bxl-whatsapp-square bx-md'></i>
                 </a>
               </div>
@@ -359,31 +359,31 @@
             </div>
           </div>
         </div>
-        <form action="" class="col-12 bg1 text- fs-6 pb-5 ps-3 pe-3 pt-4">
+        <form action="contact.php" method="POST" class="col-12 bg1 text- fs-6 pb-5 ps-3 pe-3 pt-4">
           <h1 class="pb-2 pt-4 text-info">KONTAKTFORMULAR</h1>
           <div class="row mb-4 mt-4 gap-2 justify-content-center">
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 form-floating mb3">
-              <input type="text" class="form-control" id="vorname" placeholder="Markus">
+              <input type="text" class="form-control" id="vorname" name="vorname" placeholder="Markus">
               <label class="ps-4" for="vorname">Vorname</label>
             </div>
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 form-floating">
-              <input type="text" class="form-control" id="nachname" placeholder="Bölcz" required>
+              <input type="text" class="form-control" id="nachname" name="nachname" placeholder="Bölcz" required>
               <label class="ps-4" for="nachname">Nachname</label>
             </div>
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 form-floating">
-              <input type="email" class="form-control" id="email" placeholder="markus.boelcz@gmail.com" required>
+              <input type="email" class="form-control" id="email" name="email" placeholder="markus.boelcz@gmail.com" required>
               <label class="ps-4" for="email">E-Mail</label>
             </div>
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 form-floating">
-              <input type="number" class="form-control" id="number" placeholder="06769110337">
+              <input type="number" class="form-control" id="number" name="number" placeholder="06769110337">
               <label class="ps-4" for="number">Telefon</label>
             </div>
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 form-floating">
-              <input type="text" class="form-control" id="betreff" placeholder="Anfrage" required>
+              <input type="text" class="form-control" id="betreff" name="betreff" placeholder="Anfrage" required>
               <label class="ps-4" for="betreff">Betreff</label>
             </div>
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 form-floating">
-              <textarea class="form-control" placeholder="Hier dein Kommentar..." id="textarea" style="height: 150px;" required></textarea>
+              <textarea class="form-control" placeholder="Hier dein Kommentar..." id="textarea" name="textarea" style="height: 150px;" required></textarea>
               <label class="ps-4" for="textarea">Kommentar</label>
             </div>
           </div>
